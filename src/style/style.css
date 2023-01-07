@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lora&family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courgette', cursive;
+    color: #E38B29;
+    background-color: #FFD8A9;
+}
+
+header {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/background-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vw;
+    display: flex;
+}
+
+app-header {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+search-bar {
+    height: fit-content;
+    width: 80vw;
+    margin: 40px auto;
+    background-color: #E38B29;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+    padding: 5px 5px 5px 15px;
+    position: sticky;
+    top: 30px;
+    box-shadow: 0 1px 3px #000;
+    z-index: 10;
+}
+
+drinks-menu {
+    width: 80vw;
+    height: fit-content;
+    display: block;
+    margin: 0 auto 40px;
+}
+  
+footer {
+    height: 50px;
+    line-height: 50px;
+    background-color: #E38B29;
+    color: #FDEEDC;
+    text-align: center;
+    font-size: 0.55em;
+}
+
+@media (min-width: 768px) {
+    header {
+        background-image: url('../img/background-tablet.jpg');
+        height: 70vw;
+    }
+
+    app-header {
+        position: absolute;
+        top: 5%;
+        left: 7%;
+    }
+
+    search-bar {
+        width: 70vw;
+    }
+
+    drinks-menu {
+        width: 90vw;
+    }
+
+    footer {
+        font-size: 0.65em;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/bacground-desktop.jpg');
+        height: 50vh;
+    }
+
+    app-header { 
+        position: static;
+        margin-left: 46vw;
+    }
+
+    search-bar {
+        width: 60vw;
+    }
+
+    footer {
+        font-size: 0.6em;
+    }
+}
+
+@media (min-width: 1400px) {
+    app-header {
+        margin-left: 50vw;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 1800px) {
+    app-header {
+        margin-left: 50vw;
+    }
+
+    search-bar {
+        height: 80px;
+        padding: 10px 10px 10px 30px;
+    }
+
+    footer {
+        height: 60px;
+        font-size: 1.5em;
+        line-height: 60px;
+    }
+}
